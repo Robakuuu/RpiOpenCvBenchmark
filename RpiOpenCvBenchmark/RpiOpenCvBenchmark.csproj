@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <PackageReference Include="BenchmarkDotNet" Version="0.13.11" />
+    <PackageReference Include="Emgu.CV" Version="4.8.0.5324" />
     <PackageReference Include="Emgu.CV.runtime.debian-arm64" Version="4.8.0.5324" />
   </ItemGroup>
 
