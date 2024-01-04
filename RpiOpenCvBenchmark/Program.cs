@@ -38,10 +38,7 @@ namespace OpenCVBenchmarkRaspTest
     {
         public static void Main(string[] args)
         {
-           // var summary = BenchmarkRunner.Run<FaceDetection>();
-           var test = new FaceDetection();
-           test.Setup();
-           test.DetectFace();
+           var summary = BenchmarkRunner.Run<FaceDetection>();
         }
     }
 }
