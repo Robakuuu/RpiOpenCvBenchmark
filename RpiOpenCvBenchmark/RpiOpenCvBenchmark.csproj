@@ -10,7 +10,6 @@
   <ItemGroup>
     <PackageReference Include="BenchmarkDotNet" Version="0.13.11" />
     <PackageReference Include="Emgu.CV" Version="4.9.0.5494" />
-    <PackageReference Include="Emgu.CV.Bitmap" Version="4.9.0.5494" />
     <PackageReference Include="Emgu.CV.runtime.debian-arm64" Version="4.9.0.5494" />
     <PackageReference Include="UMapx" Version="6.1.0.1" />
   </ItemGroup>

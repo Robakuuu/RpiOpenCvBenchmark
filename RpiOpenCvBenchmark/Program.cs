@@ -38,9 +38,7 @@ namespace OpenCVBenchmarkRaspTest
             _frames.Push(_secondFrame);
             _dstHdr = new Mat();
             _merge_mertens = new MergeMertens(1,0,0);
-            _fusion = new ExposureFusion(int.MaxValue);
-
-            _framesBitmap = new Bitmap[] { Emgu.CV.BitmapExtension.ToBitmap(_firstFrame), Emgu.CV.BitmapExtension.ToBitmap(_secondFrame) };
+      
         }
 
      
@@ -57,12 +55,7 @@ namespace OpenCVBenchmarkRaspTest
             }
         }
        
-        public void ExposureFusionTest()
-        {
-         
-            var result=_fusion.Apply(_framesBitmap);
-           
-        }
+     
         [Benchmark]
         public void SimpleHDR()
         {
@@ -95,11 +88,7 @@ namespace OpenCVBenchmarkRaspTest
     {
         public static void Main(string[] args)
         {
-            //var tmp = new OpenCVBenchmark();
-            //tmp.Setup();
-            //tmp.SimpleHDR();
-            //tmp.HdrTest();
-             // tmp.ExposureFusionTest();
+       
 
              var summary = BenchmarkRunner.Run<OpenCVBenchmark>();
         }
